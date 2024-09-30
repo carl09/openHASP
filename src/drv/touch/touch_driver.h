@@ -87,6 +87,9 @@ class BaseTouch {
 #elif TOUCH_DRIVER == 0x2007
 #warning Building for TSC2007
 #include "touch_driver_tsc2007.h"
+#elif TOUCH_DRIVER == 0x816
+#warning Building for CST816S
+#include "touch_driver_cst816s.h"
 #elif defined(LGFX_USE_V1)
 #warning Building for LovyanGfx Touch
 #include "touch_driver_lovyangfx.h"
